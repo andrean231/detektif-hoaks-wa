@@ -17,7 +17,7 @@ async function analisisPesan() {
 
     try {
         // MENGHUBUNGI SERVER BACKEND SENDIRI (API Key tersembunyi di sana)
-        const response = await fetch('http://localhost:3000/api/analisis', {
+        const response = await fetch('/api/analisis', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ pesan: pesan })
